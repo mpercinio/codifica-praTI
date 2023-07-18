@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibility</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+        .background {
+            background-color: #5333ed;
+        }
+        .navbar {
+            display: flex;
+            position: sticky;
+            top: 0;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navList {
+            display: flex;
+            width: 50%;
+        }
+        .navList li {
+            list-style: none;
+            padding: 2rem 2.2rem;
+        }
+        .navList li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .navList li a:hover {
+            color: black;
+            cursor: pointer;
+        }
+        .rightNav {
+            width: 15%;
+        }
+        .headerTitle {
+            align-self: center;
+        }
+        .contentWrapper {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            align-self: center;
+            font-size: 1.2rem;
+        }
+        .textright {
+            align-self: flex-end;            
+        }
+        .ayImage {
+            align-self: center;            
+        }
+        .aytext:focus {
+            font-weight: bold;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="navList">
+            <li><a href="">Início</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" name="search" id="search">
+            <button class="btn btnSm">Buscar</button>
+        </div>
+    </nav>
+    <h1 class="headerTitle">Criando um Site Acessível</h1>
+    <div class="contentWrapper">
+        <p>A acessibilidade de um site é importante para que  pessoas com algum tipo de deficiência possam ser incluídas de uma melhor maneira na internet. Para demonstrar sua importância, foi criada a cartilha da acessibilidade.
+        </p>
+        <p tabindex="0"> "acessibilidade na web significa que pessoas com deficiência podem usar a web. Mais especificamente, a acessibilidadena web significa que pessoas com deficiência podem perceber, entender, navegar, interagir e contribuir para a web. E mais. Ela também beneficia outras pessoas, incluindo pessoas idosas com capacidades em mudança devido ao envelhecimento." </p>
+        <p tabindex="0" class="textRight">Cartilha Acessibilidade na web - W3C Brasil</p>
+    </div>
+    <img  class="ayImage" src="./img/Acessibilidade.jpeg" alt="Representação de acessibilidade na web" width="1350">    
+</body>
+</html>
